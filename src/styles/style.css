@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: aqua;
+}
+.App{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.logo{
+  font-size: 50px;
+  padding-top: 50px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+.container{
+  margin-top: 50px;
+}
+.inpText{
+  font-size: 20px;
+    width: 60%;
+    height: 35px;
+    padding-left: 10px;
+    box-shadow: 0px 2px 3px 1px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+}
+
+.button{
+  cursor: pointer;
+  font-size: 49px;
+    border: none;
+    background: transparent;
+}
+.blockWeather{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weather{
+    width: 200px;
+    margin: 0;
+    background: white;
+    box-shadow: 11px 25px 14px 5px rgba(0,0,0,0.77);
+    border-radius: 15%;
+    margin-left: 30px;
+    margin-top: 40px;  
+}
+
+.city{
+  font-size: 40px;
+}
+
+.country{
+    font-size: 19px;
+    background: red;
+    border-radius: 10px;
+}
+
+@media (min-width: 270px) and (max-width:399px) {
+  .App{
+    width: 100%;
+  }
+  .logo{
+    font-size: 16px;
+  }
+  .container {
+    margin-top: 30px;
+}
+
+.blockWeather{
+  justify-content: center;
+}
+.weather {
+  margin-left: 0;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+}
+
+@media (min-width: 400px) and (max-width:459px) {
+  .App{
+    width: 100%;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .blockWeather{
+    justify-content: center;
+  }
+  .weather{
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 460px) and (max-width:900px) {
+  .App{
+    width: 100%;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .blockWeather{
+    justify-content: center;
+  }
+  .weather{
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 901px) and (max-width:1400px){
+  .App{
+    width: 80%;
+  }
+
+  .weather{
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+}
