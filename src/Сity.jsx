@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Сities(props) {
+export default function Сity(props) {
   const image =
   "http://openweathermap.org/img/wn/" + props.cities.icon + "@2x.png";
   return (

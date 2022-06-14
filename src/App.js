@@ -1,4 +1,4 @@
-import Container from "./Container";
+import ListOfWeather from "./ListOfWeather";
 import Header from "./Header";
 import "./styles/style.css";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Container />
+      <ListOfWeather />
     </div>
   );
 }

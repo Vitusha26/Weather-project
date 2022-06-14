@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Search from './Search';
-import Сities from './Сities';
+import Сity from './Сity';
 import axios from 'axios';
 
 export default function Container() {
@@ -21,7 +21,6 @@ export default function Container() {
       icon: response.data.weather[0].icon,
     }
     setCities([...cities,newCity])
-    console.log(newCity);  
   }
 
 
@@ -41,7 +40,7 @@ export default function Container() {
       <Search value={city}  setCity={setCity} onClick={handClick}/>
       <div className='blockWeather'>
       {cities.map(city => 
-      <Сities cities={city} key={city.id}/>)}
+      <Сity cities={city} key={city.id}/>)}
       </div>
     </div>
   )
